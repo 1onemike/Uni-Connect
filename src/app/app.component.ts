@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from 'jQuery';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'uniapp';
+  title = 'Uni-Connect | Bridging the gap between students and universities';
 }

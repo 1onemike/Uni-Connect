@@ -1,0 +1,42 @@
+.user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad
+{margin-top:20px;
+}
+
+
+
+.row-section .row-block{background:#fff; padding:20px; margin-bottom:50px;}
+.row-section .row-block ul{margin:0; padding:0;}
+.row-section .row-block ul li{list-style:none; margin-bottom:20px;}
+.row-section .row-block ul li:last-child{margin-bottom:0;}
+.row-section .row-block ul li:hover{cursor:grabbing;}
+.row-section .row-block .media{border:1px solid #d5dbdd; padding:5px 20px; border-radius: 5px; box-shadow:0px 2px 1px rgba(0,0,0,0.04); background:#fff;}

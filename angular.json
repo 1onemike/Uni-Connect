@@ -29,7 +29,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              
+              "node_modules/jquery/dist/jquery.min.js","src/assets/js/jquery.countdown.js"]
           },
           "configurations": {
             "production": {
@@ -76,9 +78,13 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [],
+              "src/styles.scss"            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/jquery.countdown.js",
+              "src/assets/js/masonry.pkgd.min.js",
+              "src/assets/js/magnific-popup.min.js",
+              "src/assets/js/main.js"],
             "assets": [
               "src/favicon.ico",
               "src/assets"

@@ -1,0 +1,305 @@
+<header class="header-section">
+  <div class="container">
+    <!-- logo -->
+    <a  [routerLink]="['/home']" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
+    <div class="nav-switch">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="header-info">
+      <div class="hf-item">
+        <i class="fa fa-clock-o"></i>
+        <p><span>Working time:</span>Monday - Friday: 08 AM - 06 PM</p>
+      </div>
+      <div class="hf-item">
+        <i class="fa fa-map-marker"></i>
+        <p><span>Find us:</span>40 ABC Street 133/2, ACCRA - GHANA</p>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="nav-section navbar-right navbar-fixed-top">
+      <div class="container">
+        <div class="nav-right navbar-fixed-top">
+          <!-- <a href=""><i class="fa fa-search"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a> -->
+        </div>
+        <ul class="main-menu">
+          <li class="active"><a [routerLink]="['/home']">Home</a></li>
+          <li><a [routerLink]="['/schools']">VIEW SCHOOLS</a></li>
+          <li><a [routerLink]="['/login']" >LogIn / SignUp</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Header section end -->
+  
+    
+    
+    <!-- Full Page Image Background Carousel Header -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <!-- <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> -->
+  
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner">
+          <div class="item active">
+              <!-- Set the first background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('../assets/img/banner2.jpg');"></div>
+              <div class="carousel-caption">
+                   <h2 class="animated fadeInLeft" style="color: aliceblue">Welcome to <span style="color: #ffd300;">Uni-</span>Connect</h2>
+                   <p class="animated fadeInUp" style="color: aliceblue">Ghana's First Online University Application Portal</p>
+                   <p class="animated fadeInUp"><a [routerLink]="['/login']" class="btn btn-transparent btn-rounded btn-large">Get Started </a></p>
+              </div>
+          </div>
+      
+      </div>
+  
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+      </a>
+  
+  </div>
+  
+    
+  
+    <!-- Counter section  -->
+    <section class="counter-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6">
+            <div class="big-icon">
+              <i class="fa fa-graduation-cap"></i>
+            </div>
+            <div class="counter-content">
+              <h2>APPLICATIONS CLOSING SOON</h2>
+              <p><i class="fa fa-calendar-o"></i>31st December 2018</p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <div class="counter">
+              <div class="counter-item"><h4>20</h4>Days</div>
+              <div class="counter-item"><h4>08</h4>Hrs</div>
+              <div class="counter-item"><h4>40</h4>Mins</div>
+              <div class="counter-item"><h4>56</h4>secs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter section end -->
+  
+  
+    
+    <!-- Enroll section -->
+    <section class="enroll-section spad set-bg" data-setbg="assets/img/enroll-bg.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="section-title text-white">
+              <h3>HOW IT WORKS</h3>
+              <p>Get started with us to explore the exciting</p>
+            </div>
+            <div class="enroll-list text-white">
+              <div class="enroll-list-item">
+                <span>1</span>
+                <h5>CREATE YOUR PROFILE AND UPLOAD YOUR DOCUMENTS</h5>
+              </div>
+              <div class="enroll-list-item">
+                <span>2</span>
+                <h5>SEARCH AND APPLY TO SCHOOLS CURRENTLY ADMITTING</h5>
+              </div>
+              <div class="enroll-list-item">
+                <span>3</span>
+                <h5>TRACK APPLICATION PROGRESS</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 p-lg-0 p-4">
+            <img src="assets/img/encroll-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+   
+    
+
+    <section class="blog-section spad">
+      <div class="container">
+        <div class="section-title text-center">
+          <h3>LATEST NEWS</h3>
+          <p>Get latest news & updates concerning Ghana's universities</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="blog-item">
+              <div class="blog-thumb set-bg" ><img src="data:image/jpeg;base64,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" alt="1">
+              </div>
+              <div class="blog-content">
+                <a  href="#" ><h4>Classify Ghana universities into top or medium - UG Vice Chancellor</h4></a>
+                <div class="blog-meta">
+                  <span><i class="fa fa-calendar-o"></i> 24 Mar 2018</span>
+                  <!-- <span><i class="fa fa-user"></i> Owen Wilson</span> -->
+                </div>
+                <p>The Vice-Chancellor of the University of Ghana, Prof. Ebenezer Oduro Owusu has called for the classification of universities in the country ..</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="blog-item">
+                <div class="blog-thumb set-bg" ><img src="data:image/png;base64,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" alt="1">
+                </div>
+              <div class="blog-content">
+                <a  href="#"><h4>Lancaster University Ghana fees and entry requirements</h4></a>
+                <div class="blog-meta">
+                  <span><i class="fa fa-calendar-o"></i> 23 Mar 2018</span>
+                  <!-- <span><i class="fa fa-user"></i> Owen Wilson</span> -->
+                </div>
+                <p>Lancaster University Ghana is one of the first full-fledged universities offering world-class training. It's affiliation to the UK parent campus award ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="blog-item">
+                <div class="blog-thumb set-bg" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHmBoZU2wnZgflY15pmxlHlRkHfOcgrdE4W2NO5rQNi0YSfUBNA" alt="1">
+                </div>
+              <div class="blog-content">
+                <a  href="#"><h4>Let's talk about free SHS graduates for 2020, universities tell government</h4></a>
+                <div class="blog-meta">
+                  <span><i class="fa fa-calendar-o"></i> 24 Mar 2018</span>
+                  <!-- <span><i class="fa fa-user"></i> Owen Wilson</span> -->
+                </div>
+                <p>Teachers Association of Ghana (UTAG) in conjunction with the Canadian Association of University Teachers (CAUT) on Thursday at Elmina...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="blog-item">
+                <div class="blog-thumb set-bg" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwXwyqEL5iaksmY9k8qYdxeQ46vmf-XjwFaKcXX1CF9qqb3U-s" alt="1">
+                </div>
+              <div class="blog-content">
+              <a href="#"><h4>Avoid KNUST crisis - University of Ghana VC tells lecturers</h4></a>	
+                <div class="blog-meta">
+                  <span><i class="fa fa-calendar-o"></i> 23 Mar 2018</span>
+                  <!-- <span><i class="fa fa-user"></i> Owen Wilson</span> -->
+                </div>
+                <p>The Vice-Chancellor of the University of Ghana, Professor Ebenezer Oduro Owusu, has asked lecturers of the university to find innovative ways ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+  
+    
+    <div class="container">
+      <div class="section-title text-center">
+        <h3>OUR AFFILIATED UNIVERSITIES</h3>
+      </div>
+        
+    
+                     <div class="row">
+                      <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\legon.jpg" alt="Image" style="height:80px;"></a></div>
+                      <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\knust.jpg" alt="Image" style="height:80px;"></a></div>
+                      <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\ashesi.jpg" alt="Image" style="height:80px;"></a></div>
+                       <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\central.png" alt="Image" style="height:80px;"></a></div>
+                       <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\ucc.png" alt="Image" style="height:80px;"></a></div>
+                       <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\meth.png" alt="Image" style="height:80px;"></a></div>
+
+                     </div><!--.row-->
+               
+    
+                     
+      </div>
+     
+    
+<br>
+    
+
+    <footer class="footer-section">
+      <div class="container footer-top">
+        <div class="row">
+          <!-- widget -->
+          <div class="col-sm-6 col-lg-3 footer-widget">
+            <div class="about-widget">
+            <a [routerLink]="['/home']">  <img src="assets/img/logo-light.png" alt=""></a> 
+              <p>Ghana's First Online University Application Portal</p>
+              <div class="social pt-1">
+                <a href=""><i class="fa fa-twitter-square"></i></a>
+                <a href=""><i class="fa fa-facebook-square"></i></a>
+                <a href=""><i class="fa fa-google-plus-square"></i></a>
+                <a href=""><i class="fa fa-linkedin-square"></i></a>
+                <a href=""><i class="fa fa-rss-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- widget -->
+          <div class="col-sm-6 col-lg-3 footer-widget">
+            <h6 class="fw-title">SITE LINKs</h6>
+            <div class="dobule-link">
+              <ul>
+                <li><a [routerLink]="['/home']">Home</a></li>
+                <li><a [routerLink]="['/about']">About us</a></li>
+                <li><a [routerLink]="['/schools']">Schools</a></li>
+                <li><a [routerLink]="['/news']">News</a></li>
+                <li><a [routerLink]="['/login']">LOGIN/SIGNUP</a></li>
+
+              </ul>
+              <ul>
+                <li><a href="">Policy</a></li>
+                <li><a href="">Term</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Site map</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- widget -->
+          <div class="col-sm-6 col-lg-3 footer-widget">
+            <h6 class="fw-title">RECENT NEWS</h6>
+            <ul class="recent-post">
+              <li>
+                <p>Snackable study:How to break <br> up your master's degree</p>
+                <span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
+              </li>
+              <li>
+                <p>Open University plans major <br> cuts to number of staff</p>
+                <span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
+              </li>
+            </ul>
+          </div>
+          <!-- widget -->
+          <div class="col-sm-6 col-lg-3 footer-widget">
+            <h6 class="fw-title">CONTACT</h6>
+            <ul class="contact">
+              <li><p><i class="fa fa-map-marker"></i> 40 ABC Street 133/2, ACCRA - GHANA</p></li>
+              <li><p><i class="fa fa-phone"></i> (+233) 111 555 666</p></li>
+              <li><p><i class="fa fa-envelope"></i> support@uniconnectgh.com</p></li>
+              <li><p><i class="fa fa-clock-o"></i> Monday - Friday, 08:00AM - 06:00 PM</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- copyright -->
+      <div class="copyright">
+        <div class="container">
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright 2018. All rights reserved | Uni-Connect 
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        </div>		
+      </div>
+    </footer>
+  
+    
+   
+  
+  
+  
