@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schools.component.scss']
 })
 export class SchoolsComponent implements OnInit {
+  navbarOpen = false;
 
+  toggleNavbarsch() {
+    this.navbarOpen = !this.navbarOpen;
+  }
   constructor() { }
 
   ngOnInit() {

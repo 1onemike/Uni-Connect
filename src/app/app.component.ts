@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as $ from 'jQuery';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-root',
@@ -8,4 +8,19 @@ import * as $ from 'jQuery';
 })
 export class AppComponent {
   title = 'Uni-Connect | Bridging the gap between students and universities';
+  
+  // public ngOnInit()
+  // {
+  //   $(document).ready(function(){
+  //       $("button").click(function(){
+  //           var div = $("div");  
+  //           div.animate({left: '100px'}, "slow");
+  //           div.animate({fontSize: '5em'}, "slow");
+  //       });
+  //   });
+  // }
+
+
+
+
 }

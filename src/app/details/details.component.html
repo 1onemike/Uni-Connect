@@ -1,10 +1,10 @@
 <header class="header-section">
     <div class="container">
       <!-- logo -->
-      <a href="" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
-      <div class="nav-switch">
+      <a [routerLink]="['/home']" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
+      <!-- <div class="nav-switch">
         <i class="fa fa-bars"></i>
-      </div>
+      </div> -->
       <div class="header-info">
         <div class="hf-item">
           <i class="fa fa-clock-o"></i>
@@ -19,24 +19,62 @@
   </header>
 
 
-
-      <nav class="nav-section navbar-right navbar-fixed-top">
-          <div class="container">
-            <div class="nav-right navbar-fixed-top">
-              <!-- <a href=""><i class="fa fa-search"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a> -->
-            </div>
-            <ul class="main-menu">
-              <li><a [routerLink]="['/home']">Home</a></li>
-              <li><a [routerLink]="['/profile']">Profile</a></li>
-              <li ><a [routerLink]="['/applications']">Applications</a></li>
-              <li  class="active"><a [routerLink]="['/details']">School Info</a></li>
-
+  <nav class="navbar navbar-expand-lg navbar-dark "  style="	background: #020031">
+    <a class="navbar-brand" href="#">
       
-            </ul>
-          </div>
+    </a>
+  
+    <button class="navbar-toggler" type="button"
+            (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  
+    <div class="collapse navbar-collapse show"
+         [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav  mr-auto">
+        <li class=" nav-item">
+          <a [routerLink]="['/home']" class="nav-item nav-link" style="
+          color: #fff;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 25px 20px;
+          margin-right: -5px;" >HOME</a>
+        </li>
         
-        </nav>
+        <li class=" nav-item">
+          <a [routerLink]="['/profile']" class="nav-item nav-link"  style="
+          color: #fff;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 25px 20px;
+          margin-right: -5px;" >PROFILE</a>
+        </li>
+
+        <li class=" nav-item">
+          <a [routerLink]="['/applications']" class="nav-item nav-link" style="
+          color: #fff;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 25px 20px;
+          margin-right: -5px;"  >APPLICATIONS</a>
+        </li>
+     
+        <li class="active nav-item">
+          <a [routerLink]="['/details']" class="nav-item nav-link" style="
+          color: #fff;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 25px 20px;
+          margin-right: -5px;"  >SCHOOL INFO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
         <br>
         
@@ -53,7 +91,7 @@
                           <br>
                           <h3>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY </h3> </div>
                           <br>
-                          <div class="alert alert-info alert-dismissable">
+                          <div class="alert  alert-dismissable" style='background-color: #020031'>
                               <a class="panel-close close" data-dismiss="alert">×</a> 
                               <i class="fa fa-warning"></i>
                             APPLICATION DEADLINE : 23/10/19

@@ -1,10 +1,10 @@
 <header class="header-section">
   <div class="container">
     <!-- logo -->
-    <a  [routerLink]="['/home']" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
-    <div class="nav-switch">
+    <a [routerLink]="['/home']" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
+    <!-- <div class="nav-switch">
       <i class="fa fa-bars"></i>
-    </div>
+    </div> -->
     <div class="header-info">
       <div class="hf-item">
         <i class="fa fa-clock-o"></i>
@@ -17,11 +17,10 @@
     </div>
   </div>
 </header>
-<nav class="nav-section navbar-right navbar-fixed-top">
+<!-- <nav class="nav-section navbar-right navbar-fixed-top">
       <div class="container">
         <div class="nav-right navbar-fixed-top">
-          <!-- <a href=""><i class="fa fa-search"></i></a>
-          <a href=""><i class="fa fa-shopping-cart"></i></a> -->
+        
         </div>
         <ul class="main-menu">
           <li class="active"><a [routerLink]="['/home']">Home</a></li>
@@ -29,19 +28,61 @@
           <li><a [routerLink]="['/login']" >LogIn / SignUp</a></li>
         </ul>
       </div>
-    </nav>
-    <!-- Header section end -->
+    </nav> -->
+
   
+    <nav class="navbar navbar-expand-lg navbar-dark "  style="	background: #020031">
+      <a class="navbar-brand" href="#">
+        
+      </a>
     
+      <button class="navbar-toggler" type="button"
+              (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+    
+      <div class="collapse navbar-collapse show"
+           [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav  mr-auto">
+          <li class="active nav-item">
+            <a [routerLink]="['/home']" class="nav-item nav-link" style="
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 25px 20px;
+            margin-right: -5px;" >HOME</a>
+          </li>
+          
+          <li class=" nav-item">
+            <a [routerLink]="['/schools']" class="nav-item nav-link"  style="
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 25px 20px;
+            margin-right: -5px;" >VIEW SCHOOLS</a>
+          </li>
+
+          <li class=" nav-item">
+            <a [routerLink]="['/login']" class="nav-item nav-link" style="
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 25px 20px;
+            margin-right: -5px;"  >LOGIN / SIGN UP</a>
+          </li>
+       
+          
+        </ul>
+      </div>
+    </nav>
     
     <!-- Full Page Image Background Carousel Header -->
     <div id="myCarousel" class="carousel slide">
-      <!-- Indicators -->
-      <!-- <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol> -->
+
   
       <!-- Wrapper for Slides -->
       <div class="carousel-inner">
@@ -57,13 +98,7 @@
       
       </div>
   
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="icon-next"></span>
-      </a>
+    
   
   </div>
   
@@ -214,10 +249,50 @@
                        <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\ucc.png" alt="Image" style="height:80px;"></a></div>
                        <div class="col-md-2 col-xs-4"><a  class="thumbnail"><img src="assets\img\logos\meth.png" alt="Image" style="height:80px;"></a></div>
 
-                     </div><!--.row-->
-               
-    
-                     
+                     </div>
+
+                     <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+  
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+  </script>
+<div class="container">
+  <h2>Our  Partners</h2>
+   <section class="customer-logos slider">
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+   </section>
+</div> -->
       </div>
      
     

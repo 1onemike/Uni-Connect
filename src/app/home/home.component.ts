@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import * as $ from "slick";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
   constructor() { }
 
   ngOnInit() {
+
+  //   $(document).ready(function(){
+  //     $('.customer-logos').slick({
+  //         slidesToShow: 6,
+  //         slidesToScroll: 1,
+  //         autoplay: true,
+  //         autoplaySpeed: 1500,
+  //         arrows: false,
+  //         dots: false,
+  //         pauseOnHover: false,
+  //         responsive: [{
+  //             breakpoint: 768,
+  //             settings: {
+  //                 slidesToShow: 4
+  //             }
+  //         }, {
+  //             breakpoint: 520,
+  //             settings: {
+  //                 slidesToShow: 3
+  //             }
+  //         }]
+  //     });
+  // });
   }
 
 }

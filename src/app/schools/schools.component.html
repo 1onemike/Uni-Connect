@@ -1,10 +1,8 @@
 <header class="header-section">
   <div class="container">
     <!-- logo -->
-    <a href="" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
-    <div class="nav-switch">
-      <i class="fa fa-bars"></i>
-    </div>
+    <a [routerLink]="['/home']" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
+   
     <div class="header-info">
       <div class="hf-item">
         <i class="fa fa-clock-o"></i>
@@ -18,24 +16,178 @@
   </div>
 </header>
 
-<nav class="nav-section navbar-right navbar-fixed-top">
-    <div class="container">
-      <div class="nav-right navbar-fixed-top">
-        <!-- <a href=""><i class="fa fa-search"></i></a>
-        <a href=""><i class="fa fa-shopping-cart"></i></a> -->
-      </div>
-      <ul class="main-menu">
-        <li><a [routerLink]="['/home']">Home</a></li>
-        <li  class="active"><a [routerLink]="['/schools']">VIEW SCHOOLS</a></li>
-        <li ><a [routerLink]="['/login']" >LogIn / SignUp</a></li>
-      </ul>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-dark "  style="	background: #020031">
+  <a class="navbar-brand" href="#">
+    
+  </a>
 
-  <section class="row-section">
+  <button class="navbar-toggler" type="button"
+          (click)="toggleNavbarsch()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse show"
+       [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav  mr-auto">
+      <li class=" nav-item">
+        <a [routerLink]="['/home']" class="nav-item nav-link" style="
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 25px 20px;
+        margin-right: -5px;" >HOME</a>
+      </li>
+      
+      <li class="active nav-item">
+        <a [routerLink]="['/schools']" class="nav-item nav-link"  style="
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 25px 20px;
+        margin-right: -5px;" >VIEW SCHOOLS</a>
+      </li>
+
+      <li class=" nav-item">
+        <a [routerLink]="['/login']" class="nav-item nav-link" style="
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 25px 20px;
+        margin-right: -5px;"  >LOGIN / SIGN UP</a>
+      </li>
+   
+      
+    </ul>
+  </div>
+</nav>
+
+  <section class="row">
     <div class="container">
+
+        <div>
+            <table class="table table-responsive table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>NAME</th>
+                  <th>DEADLINE FOR APPLICATIONS</th>
+                  <th ></th>
+                </tr>
+              </thead>
+              <tbody>
+            
+                <tr style="height:120px;" >
+                  <td><img   src="assets\img\logos\knust.jpg"></td>
+                  <td>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY</td>
+                  <td>12 / 03 /19</td>
+                 
+                  <td>
+                     
+                      <div class="btn-group">
+                          <button [routerLink]="['/details']" type="button" class="btn btn-primary1">MORE INFO</button>
+                          <button [routerLink]="['/apply']" type="button" class="btn btn-primary1">APPLY NOW</button>
+                        </div>
+                  </td>
+                </tr>
+          
+                <tr  style="height:120px;">
+                  <td><img  src="assets\img\logos\legon.jpg"></td>
+                  <td>UNIVERSITY OF GHANA LEGON</td>
+                  <td>10 / 01 /19</td>
+                 
+                  <td>
+                      <div class="btn-group">
+                          <button [routerLink]="['/details']" type="button" class="btn btn-primary1">MORE INFO</button>
+                          <button [routerLink]="['/apply']" type="button" class="btn btn-primary1">APPLY NOW</button>
+                        </div>
+                  </td>
+                </tr>
+          
+                <tr  style="height:120px;">
+                  <td> <img   src="assets\img\logos\ucc.png"></td>
+                  <td>UNIVERSITY OF CAPE COAST</td>
+                  <td>15 / 08 /19</td>
+                 
+                  <td>
+                      <div class="btn-group">
+                          <button [routerLink]="['/details']" type="button" class="btn btn-primary1">MORE INFO</button>
+                          <button [routerLink]="['/apply']" type="button" class="btn btn-primary1">APPLY NOW</button>
+                        </div>
+                  </td>
+                </tr>
+                <tr  style="height:120px;">
+                  <td> <img   src="assets\img\logos\central.png"></td>
+                  <td>CENTRAL UNIVERSITY</td>
+                  <td>15 / 08 /19</td>
+                 
+                  <td>
+                      <div class="btn-group">
+                          <button [routerLink]="['/details']" type="button" class="btn btn-primary1">MORE INFO</button>
+                          <button [routerLink]="['/apply']" type="button" class="btn btn-primary1">APPLY NOW</button>
+                        </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        <!-- <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Schools Currently Open for Admission.</h4>
+                </div>
+                <div class="gaadiex-list">
+                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\legon.jpg" alt="List user">
+                          <div class="gaadiex-list-item-text">
+                            <h3><a href="#">University of Ghana Legon</a></h3>
+                           
+
+                          </div>
+                          <div class="row">
+                              <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
+                              <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
+            
+                          </div>
+                        </div>
+                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\central.png" alt="List user">
+                          <div class="gaadiex-list-item-text">
+                            <h3><a href="#">Central University</a></h3>
+                            <div class="row">
+                                <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
+                                <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
+              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\ashesi.jpg" alt="List user">
+                          <div class="gaadiex-list-item-text">
+                            <h3><a href="#">Ashesi University </a></h3>
+                            <div class="row">
+                                <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
+                                <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
+              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\ucc.png" alt="List user">
+                          <div class="gaadiex-list-item-text">
+                            <h3><a href="#">University of Cape Coast</a></h3>
+                            <div class="row">
+                                <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
+                                <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
+              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div> -->
 	    
-	    <div class="col-md-10 offset-md-1 row-block">
+	    <!-- <div class="col-md-10 offset-md-1 row-block">
 	        <ul id="sortable">
 	        <li><div class="media">
 	            <div class="media-left align-self-center">
@@ -162,7 +314,7 @@
 	            
 	        
 	        </ul>
-	    </div>
+	    </div> -->
 </div>
 </section>
  
