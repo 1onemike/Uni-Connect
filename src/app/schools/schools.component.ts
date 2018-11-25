@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SchoolsComponent implements OnInit {
   navbarOpen = false;
 
-  toggleNavbarsch() {
+  toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
   constructor() { }

@@ -20,22 +20,22 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top  sticky"  style="	background: #020031">
-    <!-- <a class="navbar-brand" href="#">
-      
-    </a> -->
-    <a  class="navbar-brand" [routerLink]="['/home']" ><img src="assets/img/logo-light.png" alt=""></a>
-
+      <!-- <a class="navbar-brand" href="#">
+        
+      </a> -->
+      <a  class="navbar-brand" [routerLink]="['/home']" ><img src="assets/img/logo-light.png" alt=""></a>
   
-    <button class="navbar-toggler" type="button"
-            (click)="toggleNavbar()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-  
-    <div class="collapse navbar-collapse show"
-         [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navbar-nav  ml-auto">
-        <li class="active nav-item">
+    
+      <button class="navbar-toggler" type="button"
+              (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+    
+      <div class="collapse navbar-collapse show"
+           [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav  ml-auto">
+        <li class=" nav-item">
           <a [routerLink]="['/home']" class="nav-item nav-link" style="
           color: #fff;
           font-size: 13px;
@@ -46,23 +46,23 @@
         </li>
         
         <li class=" nav-item">
-          <a [routerLink]="['/schools']" class="nav-item nav-link"  style="
+          <a [routerLink]="['/profile']" class="nav-item nav-link"  style="
           color: #fff;
           font-size: 13px;
           text-transform: uppercase;
           font-weight: 500;
           padding: 25px 20px;
-          margin-right: -5px;" >VIEW SCHOOLS</a>
+          margin-right: -5px;" >PROFILE</a>
         </li>
-
-        <li class=" nav-item">
-          <a [routerLink]="['/login']" class="nav-item nav-link" style="
+  
+        <li class="active nav-item">
+          <a [routerLink]="['/applications']" class="nav-item nav-link" style="
           color: #fff;
           font-size: 13px;
           text-transform: uppercase;
           font-weight: 500;
           padding: 25px 20px;
-          margin-right: -5px;"  >LOGIN / SIGN UP</a>
+          margin-right: -5px;"  >APPLICATIONS</a>
         </li>
      
         
