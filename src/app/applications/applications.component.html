@@ -1,10 +1,9 @@
-<header class="header-section">
+<!-- <header class="header-section">
     <div class="container">
-      <!-- logo -->
       <a [routerLink]="['/home']" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
-      <!-- <div class="nav-switch">
+       <div class="nav-switch">
         <i class="fa fa-bars"></i>
-      </div> -->
+      </div> 
       <div class="header-info">
         <div class="hf-item">
           <i class="fa fa-clock-o"></i>
@@ -16,14 +15,16 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark "  style="	background: #020031">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top  sticky"  style="	background: #020031">
+    <!-- <a class="navbar-brand" href="#">
       
-    </a>
+    </a> -->
+    <a  class="navbar-brand" [routerLink]="['/home']" ><img src="assets/img/logo-light.png" alt=""></a>
+
   
     <button class="navbar-toggler" type="button"
             (click)="toggleNavbar()">
@@ -33,8 +34,8 @@
   
     <div class="collapse navbar-collapse show"
          [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navbar-nav  mr-auto">
-        <li class=" nav-item">
+      <ul class="navbar-nav  ml-auto">
+        <li class="active nav-item">
           <a [routerLink]="['/home']" class="nav-item nav-link" style="
           color: #fff;
           font-size: 13px;
@@ -45,31 +46,30 @@
         </li>
         
         <li class=" nav-item">
-          <a [routerLink]="['/profile']" class="nav-item nav-link"  style="
+          <a [routerLink]="['/schools']" class="nav-item nav-link"  style="
           color: #fff;
           font-size: 13px;
           text-transform: uppercase;
           font-weight: 500;
           padding: 25px 20px;
-          margin-right: -5px;" >PROFILE</a>
+          margin-right: -5px;" >VIEW SCHOOLS</a>
         </li>
 
-        <li class="active nav-item">
-          <a [routerLink]="['/applications']" class="nav-item nav-link" style="
+        <li class=" nav-item">
+          <a [routerLink]="['/login']" class="nav-item nav-link" style="
           color: #fff;
           font-size: 13px;
           text-transform: uppercase;
           font-weight: 500;
           padding: 25px 20px;
-          margin-right: -5px;"  >APPLICATIONS</a>
+          margin-right: -5px;"  >LOGIN / SIGN UP</a>
         </li>
      
-       
+        
       </ul>
     </div>
   </nav>
-
-<br>
+  <br><br><br><br><br>
        
 <div class="container">
         <div class="row">

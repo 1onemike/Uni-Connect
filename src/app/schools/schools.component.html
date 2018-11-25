@@ -14,22 +14,27 @@
         </div>
       </div>
     </div>
-</header>
-
-<nav class="navbar navbar-expand-lg navbar-dark "  style="	background: #020031">
-  <a class="navbar-brand" href="#">
-    
-  </a>
-
-  <button class="navbar-toggler" type="button"
-          (click)="toggleNavbarsch()">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  </header> -->
 
 
-  <div class="collapse navbar-collapse show"
-       [ngClass]="{ 'show': navbarOpen }">
-    <ul class="navbar-nav  mr-auto">
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top  sticky"  style="	background: #020031">
+    <!-- <a class="navbar-brand" href="#">
+      
+    </a> -->
+    <a  class="navbar-brand" [routerLink]="['/home']" ><img src="assets/img/logo-light.png" alt=""></a>
+
+  
+    <button class="navbar-toggler" type="button"
+            (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  
+    <div class="collapse navbar-collapse show"
+         [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav  ml-auto">
       <li class=" nav-item">
         <a [routerLink]="['/home']" class="nav-item nav-link" style="
         color: #fff;
@@ -50,7 +55,7 @@
         margin-right: -5px;" >VIEW SCHOOLS</a>
       </li>
 
-      <li class=" nav-item">
+      <li class="  nav-item">
         <a [routerLink]="['/login']" class="nav-item nav-link" style="
         color: #fff;
         font-size: 13px;
@@ -64,6 +69,7 @@
     </ul>
   </div>
 </nav>
+<br><br><br><br><br>
 
   <section class="row">
     <div class="container">
@@ -135,186 +141,6 @@
             </table>
           </div>
 
-        <!-- <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4>Schools Currently Open for Admission.</h4>
-                </div>
-                <div class="gaadiex-list">
-                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\legon.jpg" alt="List user">
-                          <div class="gaadiex-list-item-text">
-                            <h3><a href="#">University of Ghana Legon</a></h3>
-                           
-
-                          </div>
-                          <div class="row">
-                              <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
-                              <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
-            
-                          </div>
-                        </div>
-                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\central.png" alt="List user">
-                          <div class="gaadiex-list-item-text">
-                            <h3><a href="#">Central University</a></h3>
-                            <div class="row">
-                                <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
-                                <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
-              
-                            </div>
-                          </div>
-                        </div>
-                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\ashesi.jpg" alt="List user">
-                          <div class="gaadiex-list-item-text">
-                            <h3><a href="#">Ashesi University </a></h3>
-                            <div class="row">
-                                <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
-                                <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
-              
-                            </div>
-                          </div>
-                        </div>
-                        <div class="gaadiex-list-item"><img class="gaadiex-list-item-img" src="assets\img\logos\ucc.png" alt="List user">
-                          <div class="gaadiex-list-item-text">
-                            <h3><a href="#">University of Cape Coast</a></h3>
-                            <div class="row">
-                                <a [routerLink]="['/details']" class="btn btn-primary1">VIEW DETAILS</a>
-                                <a [routerLink]="['/login']" class="btn btn-primary1">APPLY NOW</a>
-              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-            </div>
-        </div> -->
-	    
-	    <!-- <div class="col-md-10 offset-md-1 row-block">
-	        <ul id="sortable">
-	        <li><div class="media">
-	            <div class="media-left align-self-center">
-	                <img  src="assets\img\logos\legon.jpg">
-	            </div>
-	            <div class="media-body">
-	                <h4>UNIVERSITY OF GHANA LEGON</h4>
-	            </div>
-	            <div class="media-right align-self-center">
-                  <a [routerLink]="['/details']" style="color: #ffffff;
-                  background: #020031;
-                  border: 10px;
-                  /* background-color: white; */
-                  /* background-color: white; */
-                  box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">VIEW DETAILS</a>
-                  <a [routerLink]="['/login']" style="color: #ffffff;
-                  background: #020031;
-                  border: 10px;
-                  /* background-color: white; */
-                  /* background-color: white; */
-                  box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">APPLY NOW</a>
-
-	            </div>
-          </div>
-        </li>
-
-        <li><div class="media">
-          <div class="media-left align-self-center">
-              <img  src="assets\img\logos\knust.jpg">
-          </div>
-          <div class="media-body">
-              <h4>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY</h4>
-          </div>
-          <div class="media-right align-self-center">
-            <a [routerLink]="['/details']" style="color: #ffffff;
-            background: #020031;
-            border: 10px;
-            /* background-color: white; */
-            /* background-color: white; */
-            box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">VIEW DETAILS</a>
-            <a [routerLink]="['/login']" style="color: #ffffff;
-            background: #020031;
-            border: 10px;
-            /* background-color: white; */
-            /* background-color: white; */
-            box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">APPLY NOW</a>
-          </div>
-      </div>
-    </li>
-
-    <li><div class="media">
-      <div class="media-left align-self-center">
-          <img  src="assets\img\logos\ucc.png">
-      </div>
-      <div class="media-body">
-          <h4>UNIVERSITY OF CAPE COAST</h4>
-      </div>
-      <div class="media-right align-self-center">
-        <a [routerLink]="['/details']" style="color: #ffffff;
-        background: #020031;
-        border: 10px;
-        /* background-color: white; */
-        /* background-color: white; */
-        box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">VIEW DETAILS</a>
-        <a [routerLink]="['/login']" style="color: #ffffff;
-        background: #020031;
-        border: 10px;
-        /* background-color: white; */
-        /* background-color: white; */
-        box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">APPLY NOW</a>
-      </div>
-  </div>
-</li>
-
-<li><div class="media">
-  <div class="media-left align-self-center">
-      <img  src="assets\img\logos\ashesi.jpg">
-  </div>
-  <div class="media-body">
-      <h4>ASHESI UNIVERSITY</h4>
-  </div>
-  <div class="media-right align-self-center">
-    <a [routerLink]="['/details']" style="color: #ffffff;
-    background: #020031;
-    border: 10px;
-    /* background-color: white; */
-    /* background-color: white; */
-    box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">VIEW DETAILS</a>
-    <a [routerLink]="['/login']" style="color: #ffffff;
-    background: #020031;
-    border: 10px;
-    /* background-color: white; */
-    /* background-color: white; */
-    box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">APPLY NOW</a>
-  </div>
-</div>
-</li>
-
-<li><div class="media">
-  <div class="media-left align-self-center">
-      <img  src="assets\img\logos\central.png">
-  </div>
-  <div class="media-body">
-      <h4>CENTRAL UNIVERSITY </h4>
-  </div>
-  <div class="media-right align-self-center">
-    <a [routerLink]="['/details']" style="color: #ffffff;
-    background: #020031;
-    border: 10px;
-    /* background-color: white; */
-    /* background-color: white; */
-    box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">VIEW DETAILS</a>
-    <a [routerLink]="['/login']" style="color: #ffffff;
-    background: #020031;
-    border: 10px;
-    /* background-color: white; */
-    /* background-color: white; */
-    box-shadow: 0px 0px 11px 2px bl" class="btn btn-default">APPLY NOW</a>
-  </div>
-</div>
-</li>
-	          
-	        
-	            
-	        
-	        </ul>
-	    </div> -->
 </div>
 </section>
  
