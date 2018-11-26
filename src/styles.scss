@@ -307,3 +307,67 @@ a.news-btn:hover {
     display: block;
     font-size: 1em;
 }
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center 0;
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+}
+/*---------------------
+	Fact Section
+-----------------------*/
+
+.fact-section {
+	background-position: center center;
+	position: relative;
+}
+
+.fact-section:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0.8;
+}
+
+.fact-section .container {
+	position: relative;
+	z-index: 1;
+}
+
+.fact {
+	text-align: center;
+}
+
+.fact-icon {
+	font-size: 48px;
+	color: #fff;
+	width: 50px;
+	display: inline-block;
+}
+
+.fact-text {
+	padding-left: 20px;
+	display: inline-block;
+	text-align: left;
+}
+
+.fact-text h2 {
+	color: #f6783a;
+	font-weight: 400;
+}
+
+.fact-text p {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: #fff;
+}
+.spad {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}

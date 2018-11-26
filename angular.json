@@ -32,7 +32,10 @@
             "scripts": [
               
               "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/jquery.countdown.js"]
+              "src/assets/js/jquery.countdown.js",
+              "src/assets/js/test.js"
+            
+            ]
           },
           "configurations": {
             "production": {

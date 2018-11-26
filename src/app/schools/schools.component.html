@@ -72,40 +72,76 @@
 <br><br><br><br><br>
 
   <section class="row">
+   
+      
+      
     <div class="container">
 
+    
         <div>
 
-            <form action="" class="">
-                <label for="">Search</label>
-                <div class="row">
-                  <div class="col-lg-4">
-                      <select name="">
-                          <option value="0" selected="Default">Region</option>
-                          <option value="1">Name</option>
-                          
-                          <option value="2">Location</option>
-                          </select>
-                  </div>
-                  <div class="col-lg-4">
-                      <select name="">
-                          <option value="0" selected="Default">School</option>
-                          <option value="1">Name</option>
-                          
-                          <option value="2">Location</option>
-                          </select>
-                  </div>
-                  <div class="col-lg-4">
-                      <select name="">
-                          <option value="0" selected="Default">Default</option>
-                          <option value="1">Name</option>
-                          
-                          <option value="2">Location</option>
-                          </select>
-                  </div>
+            <div class="row">
+
+                <!-- <div class="col-lg-5">
+                    <select class="mdb-select md-form mb5" searchable="Search here..">
+                        <option value="" disabled selected>Select Location</option>
+                        <option value="1">Ashanti Region</option>
+                        <option value="2">Greater Accra Region/option>
+                        <option value="3">Western Region</option>
+                        <option value="3">Eastern Region</option>
+                        <option value="3">Central Region</option>
+                      </select>
                 </div>
-                
-            </form>
+                <div class="col-lg-5">
+                    <select class="mdb-select md-form mb5" searchable="Search here..">
+                        <option value="" disabled selected>Select School</option>
+                        <option value="1">Kwame Nkrumah University of Science and Technology</option>
+                        <option value="2">University of Ghana Legon</option>
+                        
+                      </select>
+                </div>
+                <div class="col-lg-2">
+                    <button [routerLink]="['/details']" type="button" class="btn btn-primary1">GO</button>
+        
+                </div> -->
+                <form class="form-inline col-lg-12 text-center" role="form" >
+                    <div class="form-group">
+                        <select class="form-control ">
+                          <option value="" disabled selected>Search by Location</option>
+          
+                          <option>Greater Accra</option>
+                          <option>Ashanti Region</option>
+                          <option>Western Region</option>
+                          <option>Central Region</option>
+                          <option>Northern Region</option>
+                          <option>Upper East Region</option>
+                          <option>Upper West Region</option>
+                          <option>Eastern Region</option>
+          
+                          
+                        </select>
+                    </div>
+          
+                    <div class="form-group">
+                        <!-- <label for="MobilePhone" class="sr-only">Search by Name</label> -->
+                          <select class="form-control">
+                              <option value="" disabled selected>Select School</option>
+                            <option>Kwame Nkrumah University of Science and Technology</option>
+                            <option>University of Cape Coast</option>
+                            <option>Central University </option>
+                            
+                          </select>
+                    </div>
+          
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary1" data-dismiss="modal">Search</button>
+                    </div>
+                  </form>
+
+
+                  
+   </div>
+          <br><br><br>
 
             <table class="table table-responsive table-striped" style="width:100%;">
               <thead>
