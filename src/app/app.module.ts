@@ -12,6 +12,7 @@ import { ApplicationsComponent } from './applications/applications.component';
 import { ApplyComponent } from './apply/apply.component';
 import { DetailsComponent } from './details/details.component';
 import { EditprofileComponent } from './editprofile/editprofile.component';
+import {HttpClientModule}from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,9 +30,11 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [ HttpClientModule  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
